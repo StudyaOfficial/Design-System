@@ -1,0 +1,26 @@
+# Development files
+node_modules/
+src/
+.storybook/
+__tests__/
+.vscode/
+.next/
+public/
+.git/
+
+# Config files
+.eslintrc.json
+.prettierrc.json
+jest.config.js
+jest.setup.js
+next.config.js
+postcss.config.js
+tsconfig.json
+tailwind.config.ts
+components.json
+*.log
+
+# Other files
+*.lock
+bun.lockb
+package-lock.json 
