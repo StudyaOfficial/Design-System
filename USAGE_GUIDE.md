@@ -10,13 +10,13 @@ To use this package, you'll need to authenticate with GitHub Packages:
 
 2. Create or edit an `.npmrc` file in your project root:
    ```
-   @your-org:registry=https://npm.pkg.github.com/
+   @studyaofficial:registry=https://npm.pkg.github.com/
    //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
    ```
    
    Or set it globally:
    ```bash
-   npm login --scope=@your-org --registry=https://npm.pkg.github.com/
+   npm login --scope=@studyaofficial --registry=https://npm.pkg.github.com/
    ```
 
 ## Installing the package
@@ -24,15 +24,15 @@ To use this package, you'll need to authenticate with GitHub Packages:
 Once you have authentication set up, you can install the package:
 
 ```bash
-npm install @your-org/studya-design-system
+npm install @studyaofficial/studya-design-system
 # or
-yarn add @your-org/studya-design-system
+yarn add @studyaofficial/studya-design-system
 ```
 
 ## Using the components
 
 ```jsx
-import { Button, Card, Input } from '@your-org/studya-design-system';
+import { Button, Card, Input } from '@studyaofficial/studya-design-system';
 
 function App() {
   return (
@@ -60,8 +60,13 @@ This component library uses Tailwind CSS. Make sure your project has Tailwind CS
 module.exports = {
   content: [
     // ...other content paths
-    "./node_modules/@your-org/studya-design-system/**/*.{js,ts,jsx,tsx}"
+    "./node_modules/@studyaofficial/studya-design-system/**/*.{js,ts,jsx,tsx}"
   ],
   // ...rest of your config
 }
-``` 
+```
+
+## Documentation
+
+For full documentation and component examples, visit our Storybook:
+[Studya Design System Storybook](https://studyaofficial.github.io/Design-System/) 

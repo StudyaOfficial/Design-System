@@ -5,14 +5,19 @@ A modern component library built with Shadcn UI and Tailwind CSS.
 ## Installation
 
 ```bash
-npm install @your-org/studya-design-system
+npm install @studyaofficial/studya-design-system
 # or
-yarn add @your-org/studya-design-system
+yarn add @studyaofficial/studya-design-system
 # or
-pnpm add @your-org/studya-design-system
+pnpm add @studyaofficial/studya-design-system
 ```
 
 For detailed instructions on setting up authentication with GitHub Packages, see the [USAGE_GUIDE.md](./USAGE_GUIDE.md).
+
+## Documentation
+
+Browse our component documentation and examples in our Storybook:
+[Studya Design System Storybook](https://studyaofficial.github.io/Design-System/)
 
 ## Requirements
 
@@ -51,7 +56,7 @@ To publish a new version to GitHub Packages:
 First, make sure you have Tailwind CSS set up in your project. Then you can import components from the package:
 
 ```jsx
-import { Button, Input, Card } from '@your-org/studya-design-system';
+import { Button, Input, Card } from '@studyaofficial/studya-design-system';
 
 function App() {
   return (

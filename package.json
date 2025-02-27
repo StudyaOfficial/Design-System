@@ -21,7 +21,7 @@
         "start": "next start",
         "lint": "next lint",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build",
+        "build-storybook": "storybook build -o docs",
         "test": "jest",
         "test:watch": "jest --watch",
         "chromatic": "npx chromatic --project-token=chpt_e50ed2ca477df38",
