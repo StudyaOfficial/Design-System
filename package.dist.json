@@ -5,6 +5,7 @@
   "main": "index.js",
   "module": "index.mjs",
   "types": "index.d.ts",
+  "style": "build.css",
   "license": "MIT",
   "author": "Studya"
 } 
