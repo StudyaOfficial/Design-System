@@ -9,8 +9,7 @@ export const tsup: Options = {
       resolve: true,
     },
     format: ['cjs', 'esm'], // generate cjs and esm files
-    // minify: env === 'production',
-    minify: false,
+    minify: env === 'production',
     bundle: env === 'production',
     skipNodeModulesBundle: false,
     watch: env === 'development',
