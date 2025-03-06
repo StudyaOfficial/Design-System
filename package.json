@@ -16,15 +16,16 @@
         "registry": "https://npm.pkg.github.com"
     },
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
+        "dev": "yarn build:package:development",
+        "build": "yarn build:package:production",
         "lint": "next lint",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build -o docs",
         "test": "jest",
         "test:watch": "jest --watch",
         "chromatic": "npx chromatic --project-token=chpt_e50ed2ca477df38",
+        "build:package:production": "NODE_ENV=production yarn build:package",
+        "build:package:development": "NODE_ENV=development yarn build:package",
         "build:package": "tsup --config tsup.config.ts && node scripts/prepare-package.js",
         "prepublishOnly": "npm run build:package",
         "publish": "cd dist && npm publish"

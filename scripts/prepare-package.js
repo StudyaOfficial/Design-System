@@ -8,6 +8,9 @@ const packageJson = require('../package.dist.json');
 const mainPackageJson = require('../package.json');
 packageJson.version = mainPackageJson.version;
 
+// add dependencies from main package.json
+packageJson.dependencies = mainPackageJson.dependencies;
+
 // Write to the dist folder
 fs.writeFileSync(
   path.join(__dirname, '../dist/package.json'),
