@@ -1,23 +1,22 @@
-import { defineConfig } from 'tsup';
+import type { Options } from 'tsup'
 
-export default defineConfig({
-  entry: ['src/index.ts'],
-  format: ['cjs', 'esm'],
-  dts: {
-    resolve: true,
-  },
-  splitting: false,
-  sourcemap: true,
-  clean: true,
-  tsconfig: './tsconfig.build.json',
-  external: [
-    'react', 
-    'react-dom',
-    '@radix-ui/*',
-    'next',
-    'next-themes',
-    'tailwindcss',
-    'lucide-react',
-  ],
-  treeshake: true,
-}); 
+const env = process.env.NODE_ENV
+
+export const tsup: Options = {
+    splitting: true,
+    clean: true, // clean up the dist folder
+    dts: {
+      resolve: true,
+    },
+    format: ['cjs', 'esm'], // generate cjs and esm files
+    // minify: env === 'production',
+    minify: false,
+    bundle: env === 'production',
+    skipNodeModulesBundle: false,
+    watch: env === 'development',
+    target: 'es2020',
+    outDir: env === 'production' ? 'dist' : 'lib',
+    entry: ['src/index.ts'], // entry point
+    noExternal: [ /(.*)/ ],
+    // treeshake: true,
+}

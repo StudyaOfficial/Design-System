@@ -38,3 +38,6 @@ next-env.d.ts
 
 # Don't ignore docs folder (for GitHub Pages)
 !/docs/
+dist/**
+lib/**
+storybook-static/**
