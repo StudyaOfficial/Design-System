@@ -159,5 +159,8 @@
         "tailwindcss": "^3.3.0"
     },
     "readme": "ERROR: No README data found!",
-    "_id": "storybook-shadcn@0.1.0"
+    "_id": "storybook-shadcn@0.1.0",
+    "resolutions": {
+        "jackspeak": "2.1.1"
+    }
 }
